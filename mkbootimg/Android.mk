@@ -1,3 +1,4 @@
+ifneq ($(BOARD_PROVIDES_MKBOOTIMG),true)
 
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
@@ -20,3 +21,5 @@ LOCAL_IS_HOST_MODULE := true
 LOCAL_MODULE := unpackbootimg
 
 include $(BUILD_PREBUILT)
+
+endif
